@@ -16,7 +16,8 @@ body {
 .Content > div,
 .Content header,
 .Content main,
-.Content aside{
+.Content aside,
+.Content footer{
     background: #000;
     padding: 20px;
     border-radius: 5px;
@@ -29,10 +30,11 @@ body {
 }
 
 .Content .Evidencias,
+.Content .Mainpage,
 .Content .Desarrollo{
-    background: rgb(80, 212, 110);
+    background: rgb(112, 46, 1);
     color: #fff;
-    height: 100px;
+    height: 150px;
     text-align: left;
     align-items: left;
 }
@@ -45,8 +47,22 @@ body {
 }
 
 .Content main{
-    background: rgb(80, 212, 110);
+    background: rgb(112, 46, 1);
     grid-column: span 2;
+}
+
+.Content footer{
+    background: rgb(128, 126, 126);
+    grid-column: 1 / 4;
+}
+
+.Content .footer{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.Content .Integrantes{
+    float: left;
 }
 
 .Content .titulo{
@@ -56,10 +72,37 @@ body {
     padding-left: 10px;
 }
 
-img{
+img .logo{
     background: #fff;
     border-radius: 50%;
 }
+
+.Prototipo1{
+    display: inline-block;
+    text-align: left;
+}
+
+.Prototipo2{
+    display: inline-block;
+    text-align: right;
+}
+
+.Prototipo3{
+    display: block;
+    margin: auto;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+
 
 /*@media screen and (max-width: 768px){
 	.Content {
