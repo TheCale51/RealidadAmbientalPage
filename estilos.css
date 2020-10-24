@@ -1,10 +1,11 @@
+/* Cuerpo de la página*/
 body {
     background: rgb(216,238,174);
     background: radial-gradient(circle, rgba(216,238,174,1) 0%, rgba(148,233,186,1) 100%);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif ;
 }
-
+/* Contenido general de la página*/
 .Content{
     width: 90%;
     max-width: 1000px;
@@ -14,7 +15,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
 }
-
+/* Diseño de los bloques*/
 .Content header,
 .Content main,
 .Content aside,
@@ -43,7 +44,7 @@ body {
     background: rgb(128, 126, 126);
     grid-column: 1 / 4;
 }
-
+/* Propiedades de textos e imagenes*/
 .Content .footer{
     font-style: italic;
     font-size: 15px;
@@ -60,9 +61,9 @@ body {
     padding-left: 10px;
 }
 
-img .logo{
-    background: #fff;
-    border-radius: 50%;
+.escalaimg{
+    border-style: solid;
+    border-width: 5px;
 }
 
 .Prototipo1{
@@ -80,29 +81,6 @@ img .logo{
     margin: auto;
 }
 
-a{
-    color: #000;
-}
-
-a:hover{
-    text-decoration: none;
-    opacity: 1;
-    transition-duration: .5s;
-}
-
-
-
-@media screen and (max-width: 768px){
-	.Content main{
-        grid-column: 1 / -1;
-    }
-    .Content aside{
-        grid-column: 1 / -1;
-    }
-    .Content .Evidencias{
-        grid-column: span 2;
-    }
-}
 
 /*Barra de menú*/
 
@@ -137,4 +115,9 @@ a:hover{
 .menu li a:hover{
 	color: #CE7D35;
 	transition: all .3s;
+}
+/* Propiedades de las citas*/
+cite{
+    display: block;
+    text-align: right;
 }
