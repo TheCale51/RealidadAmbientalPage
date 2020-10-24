@@ -1,5 +1,6 @@
 body {
-    background-color:#fff;
+    background: rgb(216,238,174);
+    background: radial-gradient(circle, rgba(216,238,174,1) 0%, rgba(148,233,186,1) 100%);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif ;
 }
@@ -13,41 +14,28 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
 }
-.Content > div,
+
 .Content header,
 .Content main,
 .Content aside,
 .Content footer{
-    background: #000;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .Content header{
     background: rgb(80, 212, 110);
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.Content .Evidencias,
-.Content .Mainpage,
-.Content .Desarrollo{
-    background: rgb(112, 46, 1);
-    color: #fff;
-    height: 150px;
-    text-align: left;
-    align-items: left;
+    grid-column: 1 / 4;
 }
 
 .Content aside{
-    background: rgb(80, 212, 110);
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row: span 2;
 }
 
 .Content main{
-    background: rgb(112, 46, 1);
+    color:#000;
     grid-column: span 2;
 }
 
@@ -93,7 +81,7 @@ img .logo{
 }
 
 a{
-    color: rgb(255, 255, 255);
+    color: #000;
 }
 
 a:hover{
@@ -104,9 +92,49 @@ a:hover{
 
 
 
-/*@media screen and (max-width: 768px){
-	.Content {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-2";*/
+@media screen and (max-width: 768px){
+	.Content main{
+        grid-column: 1 / -1;
+    }
+    .Content aside{
+        grid-column: 1 / -1;
+    }
+    .Content .Evidencias{
+        grid-column: span 2;
+    }
+}
+
+/*Barra de menú*/
+
+.navegacion{
+	width: 100%;
+	margin: auto;
+    background: rgb(96, 228, 136);
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    border-radius: 10px;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    font-size: 20px;
+	padding: 15px 20px;
+	color: #fff;
+	font-family: 'Arial';
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
