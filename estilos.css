@@ -116,6 +116,31 @@ body {
 	color: #CE7D35;
 	transition: all .3s;
 }
+/* Submenu*/
+.submenu{
+	position: absolute;
+	background: rgb(96, 228, 136);
+	width: 100%;
+    visibility: hidden;
+    border-radius: 10px;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 18px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
 /* Propiedades de las citas*/
 cite{
     display: block;
