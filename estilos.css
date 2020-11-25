@@ -7,9 +7,9 @@ body {
 }
 /* Contenido general de la página*/
 .Content{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: auto;
+    margin: auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
@@ -35,16 +35,24 @@ body {
     grid-row: span 2;
 }
 
+.Content .yurgen{
+    border-radius: 10px;
+}
+
 .Content main{
     color:#000;
     grid-column: span 2;
 }
 
+.Content .textomain{
+    text-align: justify;
+}
+
 .Content footer{
-    background: rgb(128, 126, 126);
+    background: rgba(80, 212, 110);
     grid-column: 1 / 4;
 }
-/* Propiedades de textos e imagenes*/
+/* Correo */
 .Content .footer{
     font-style: italic;
     font-size: 15px;
@@ -54,11 +62,33 @@ body {
     float: left;
 }
 
+.Content .funciones{
+    padding-left: 50px;
+    float: left;
+}
+
+.Content .instructor{
+    padding-left: 260px;
+    float: left;
+}
+
+.Content .logosena{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 240px;
+}
+
+.Content .logocol{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 60px;
+}
+
 .Content .titulo{
     display: inline-block;
     vertical-align: top;
     font-size: 40px;
-    padding-left: 10px;
+    padding-left: 100px;
 }
 
 .escalaimg{
@@ -85,8 +115,8 @@ body {
 /*Barra de menú*/
 
 .navegacion{
-	width: 100%;
-	margin: auto;
+	width: 93%;
+	margin: 0px auto 0px auto;
     background: rgb(96, 228, 136);
     grid-column: 1 / 4;
     grid-row: 2 / 3;
@@ -105,7 +135,7 @@ body {
 .menu > li > a{
     display: block;
     font-size: 20px;
-	padding: 15px 20px;
+	padding: 10px 50px;
 	color: #fff;
 	font-family: 'Arial';
     text-decoration: none;
@@ -114,7 +144,7 @@ body {
 
 .menu li a:hover{
 	color: #CE7D35;
-	transition: all .3s;
+    transition: all .3s;
 }
 /* Submenu*/
 .submenu{
